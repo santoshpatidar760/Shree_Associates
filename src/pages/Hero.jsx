@@ -52,7 +52,7 @@ const Hero = () => {
         <button onClick={() => (window.location.href = '/product')}>view details</button>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;

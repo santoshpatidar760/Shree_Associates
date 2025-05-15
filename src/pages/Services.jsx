@@ -8,6 +8,7 @@ import stool from "../assets/stool.jpg";
 import railing from "../assets/railing.jpg";
 import kitchen from "../assets/kitchen.jpg";
 import frame from "../assets/frame.jpg";
+import { useNavigate } from "react-router-dom";
 
 const services = [
   {
@@ -69,6 +70,9 @@ const services = [
 ];
 
 const Services = () => {
+
+  const navigate = useNavigate();
+
   return (
     <div className="services-container">
       <h2>Products & Services</h2>
@@ -94,8 +98,9 @@ const Services = () => {
         ))}
       </div>
       <button className="view-complete"
-       onClick={() => (window.location.href = '/OurProduct')}
-      >View Complete Range
+        onClick={() => navigate('/OurProduct')}
+      >
+        View Complete Range
       </button>
     </div>
   );

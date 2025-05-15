@@ -17,6 +17,7 @@ import img13 from '../assets/kitchen.jpg';
 import img14 from '../assets/frame.jpg';
 import img15 from '../assets/card2.jpeg';
 import img16 from '../assets/basin.jpeg';
+import { useNavigate } from 'react-router-dom';
 
 const sections = [
   {
@@ -98,6 +99,9 @@ const sections = [
 ];
 
 const OurProduct = () => {
+
+  const navigate = useNavigate();
+
   return (
     <div className="product-img">
         {sections.map((section, idx) => (
@@ -119,7 +123,7 @@ const OurProduct = () => {
             </div>
 
             <div className="view-details-button-wrapper">
-              <button className="view-details-button">View more details</button>
+              <button className="view-details-button" onClick={() => navigate('/StrechCeiling')}>View more details</button>
             </div>
           </div>
         ))}

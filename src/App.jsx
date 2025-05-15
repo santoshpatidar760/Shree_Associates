@@ -12,6 +12,8 @@ import Contact from './pages/Contact';
 import ScrollToUp from './pages/ScrollToUp';
 import WhatsAppIcon from './pages/WhatsappIcon';
 import CallIcon from './pages/CallIcon';
+import OurProduct from './pages/OurProduct';
+import StrechCeiling from './pages/StrechCeiling';
 
 const App = () => {
   return (
@@ -23,6 +25,8 @@ const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/ourproduct" element={<OurProduct />} />
+        <Route path="/StrechCeiling" element={<StrechCeiling />} />
       </Routes>
       <Footer />
       <ScrollToUp />
