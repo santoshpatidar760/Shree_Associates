@@ -1,0 +1,17 @@
+.call-container {
+    position: fixed;
+    bottom: 100px;
+    left: 26px;
+    z-index: 9999; /* Ensures it's on top of other elements */
+  }
+  
+  .call-icon {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .call-icon:hover {
+    transform: scale(1.1);
+  }

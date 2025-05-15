@@ -1,0 +1,149 @@
+.product {
+  width: 100%;
+  font-family: Arial, sans-serif;
+}
+
+/* Image Container */
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 550px;
+  overflow: hidden;
+}
+
+.about-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Black blur overlay effect */
+.image-container::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(2px);
+  z-index: 1;
+}
+
+/* Overlayed Text on Image */
+.image-container h2 {
+  position: absolute;
+  z-index: 2;
+  color: white;
+  text-align: center;
+  text-shadow: 2px 2px 8px black;
+  width: 100%;
+  top: 30%;
+  font-size: 2.5rem;
+  margin: 0;
+  padding: 0 20px;
+}
+
+.image-container p {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1rem;
+  line-height: 1.6;
+  color: white;
+  text-align: center;
+  padding: 0 20px;
+  width: 90%;
+  z-index: 2;
+  text-shadow: 2px 2px 8px black;
+  box-sizing: border-box;
+}
+
+/* Stretch Ceiling Section (product-img) */
+.product-img {
+  padding: 40px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.section-header h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #2f2f91;
+}
+
+.section-header p {
+  margin-top: 10px;
+  color: #444;
+  font-size: 16px;
+}
+
+.view-more-link {
+  display: inline-block;
+  margin-top: 10px;
+  color: #2f2f91;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.ceiling-products-grid {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+.product-contain {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px 20px;
+  margin-bottom: 50px;
+}
+.ceiling-product-card {
+  width: 200px;
+  text-align: center;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ceiling-product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+.ceiling-image-wrapper {
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: #f7f7f7;
+  border: 1px solid #eee;
+}
+
+.ceiling-image-wrapper img {
+  max-width: 100%;
+  height: auto;
+}
+
+.ceiling-title {
+  margin-top: 10px;
+  font-weight: 500;
+  color: #000;
+}
+
+.view-details-button-wrapper {
+  margin-top: 20px;
+  text-align: right;
+}
+
+.view-details-button {
+  background-color: #2f2f91;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}

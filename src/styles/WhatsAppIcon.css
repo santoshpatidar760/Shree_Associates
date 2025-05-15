@@ -1,0 +1,18 @@
+/* WhatsApp Icon positioning */
+.whatsapp-container {
+  position: fixed;
+  bottom: 40px;
+  left: 20px;
+  z-index: 9999; /* Ensures it's on top of other elements */
+}
+
+.whatsapp-icon {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.whatsapp-icon:hover {
+  transform: scale(1.1);
+}

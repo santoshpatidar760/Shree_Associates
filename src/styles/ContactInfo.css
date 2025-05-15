@@ -1,0 +1,147 @@
+.contact-info-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: -28px auto; /* spacing around */
+  width: 100%;
+}
+
+.contact-info-container {
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1100px; /* Adjust as needed */
+  width: 100%;
+  color: white;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.info-section {
+  display: flex;
+  align-items: center;
+  padding: 20px 30px;
+  min-width: 300px;
+  flex: 1;
+  position: relative;
+  z-index: 1;
+}
+
+.dark-section {
+  background-color: #252525;
+  clip-path: polygon(0 0, 90% 0, 100% 40%, 90% 100%, 0 100%);
+  z-index: 3;
+  height: 120px; /* Increase height only for the dark section */
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  flex-grow: 1; /* Allow the dark section to grow in height */
+}
+
+.pink-section,
+.light-pink-section {
+  height: 93px; /* Keep height auto to adjust based on content */
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0; /* Prevent shrinking */
+}
+
+.pink-section {
+  background-color: #d05e81;
+  margin-left: -51px;
+  z-index: 2;
+  padding-left: 60px;
+  clip-path: polygon(0 0, 90% 0, 100% 50%, 90% 100%, 0 100%);
+}
+
+.light-pink-section {
+  background-color: #e1678d;
+  margin-left: -54px;
+  z-index: 1;
+  padding-left: 60px;
+}
+
+.info-icon {
+  font-size: 28px;
+  margin-right: 20px;
+}
+
+.info-section h4 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.info-section p {
+  margin: 5px 0 0;
+  font-size: 14px;
+}
+
+/* Tablet (≤ 1024px) */
+@media screen and (max-width: 1024px) {
+  .contact-info-container {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+  }
+
+  .info-section {
+    min-width: auto;
+    width: 90%;
+    padding: 15px 20px;
+    justify-content: flex-start;
+  }
+
+  .dark-section,
+  .pink-section,
+  .light-pink-section {
+    clip-path: none;
+    margin-left: 0;
+    padding-left: 30px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+}
+
+/* Mobile (≤ 768px) */
+@media screen and (max-width: 768px) {
+  .contact-info-wrapper {
+    margin: 0 auto;
+  }
+
+  .info-icon {
+    font-size: 24px;
+    margin-right: 10px;
+  }
+
+  .info-section h4 {
+    font-size: 16px;
+  }
+
+  .info-section p {
+    font-size: 13px;
+  }
+}
+
+/* Small Mobile (≤ 480px) */
+@media screen and (max-width: 480px) {
+  .contact-info-container {
+    margin-top: 40px;
+  }
+
+  .info-section {
+    padding: 10px 15px;
+  }
+
+  .info-section h4 {
+    font-size: 15px;
+  }
+
+  .info-section p {
+    font-size: 12px;
+  }
+
+  .info-icon {
+    font-size: 20px;
+  }
+}
