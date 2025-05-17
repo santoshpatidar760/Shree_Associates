@@ -55,6 +55,7 @@
 }
 
 .product-left {
+  margin-top: 30px;
   flex: 1;
   min-width: 280px;
 }
@@ -80,9 +81,29 @@
 }
 
 .photos-button:hover {
-  background: #0d9488;
+  background: #EF8CAF;
   color: #fff;
+  border: 2px solid #EF8CAF;
 }
+
+.thumbnail-container {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.thumbnail {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+.thumbnail:hover {
+  border-color: #007bff;
+}
+
 
 .product-right {
   flex: 2;
@@ -139,7 +160,7 @@
 }
 
 .interest-button {
-  background-color: #0d9488;
+  background-color: #EF8CAF;
   color: #fff;
   padding: 0.8rem 1.6rem;
   border: none;
