@@ -15,6 +15,13 @@ import CallIcon from './pages/CallIcon';
 import OurProduct from './pages/OurProduct';
 import StrechCeiling from './pages/StrechCeiling';
 import TableTops from './pages/TableTops';
+import VinylWallpaper from './pages/vinylWallpaper';
+import Aluminium from './pages/Aluminium';
+import Corian from './pages/Corian';
+import CorianRailing from './pages/CorianRailing';
+import CorianKitchen from './pages/CorianKitchen';
+import MirrorFrame from './pages/MirrorFrame';
+
 
 const App = () => {
   return (
@@ -27,8 +34,14 @@ const App = () => {
         <Route path="/services" element={<Services />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/ourproduct" element={<OurProduct />} />
-        <Route path="/StrechCeiling" element={<StrechCeiling />} />
+        <Route path="/stretch-ceiling" element={<StrechCeiling />} />
         <Route path="/Table-tops" element={<TableTops />} />
+        <Route path="/vinyl-wallpaper" element={<VinylWallpaper />} />
+        <Route path="/aluminum-louvers" element={<Aluminium />} /> 
+        <Route path="/corian-stool" element={<Corian />} />
+        <Route path="/corian-railing" element={<CorianRailing />} />
+        <Route path="/corian-kitchen-top" element={<CorianKitchen />} />
+        <Route path="/mirror-frame" element={<MirrorFrame />} /> 
       </Routes>
       <Footer />
       <ScrollToUp />

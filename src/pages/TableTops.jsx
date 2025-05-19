@@ -2,70 +2,75 @@ import React, { useState } from 'react';
 import "../styles/StrechCeiling.css";
 
 import img1 from '../assets/tops.jpg';
-import img2 from '../assets/rectangular.jpeg';
-import img3 from '../assets/center.jpeg';
+import img11 from '../assets/table-11.jpg';
+import img12 from '../assets/table-12.jpg';
 
+import img2 from '../assets/rectangular.jpeg';
+import img21 from '../assets/corian-solidtop.jpeg';
+import img22 from '../assets/corian-top.jpeg';
+
+import img3 from '../assets/center.jpeg';
+import img31 from '../assets/table-31.jpg';
+import img32 from '../assets/table-32.jpg';
 const products = [
-    {
+  {
     name: "Lg Corian Acrylic Solid Surface",
     price: 650,
     unit: "Square Feet",
     image: img1, // main image
-    thumbnails: [img1, img1, img1],  // 3 small images for thumbnails
+    thumbnails: [img1, img11, img12],  // 3 small images for thumbnails
     minOrder: 1000,
     details: {
       Color: "White",
       Shape: "Rectangular",
       "Usage/Application": "Table",
       Finish: "Polished",
-      "Product Material":	"Corian",
-      Thickness:	"10 mm"
+      "Product Material": "Corian",
+      Thickness: "10 mm"
     }
   },
-    {
-        name: "Rectangular White Corian Table Top",
-        price: 750,
-        unit: "Square Feet",
-        image: img2,
-        thumbnails: [img2, img2, img2],
-        minOrder: 1000,
-        details: {
-            Color: "White",
+  {
+    name: "Rectangular White Corian Table Top",
+    price: 750,
+    unit: "Square Feet",
+    image: img2,
+    thumbnails: [img2, img21, img22],
+    minOrder: 1000,
+    details: {
+      Color: "White",
       Shape: "Rectangular",
       "Usage/Application": "Restaurant",
       Finish: "Polished",
-      "Product Material":	"Corian",
-      Thickness:	"12 mm"
-        }
-    },
-    {
-        name: "Corian Top Center Table",
-        price: 650,
-        unit: "Square Feet",
-        image: img3,
-        thumbnails: [img3, img3, img3],
-        minOrder: 1000,
-        details: {
-            Color: "White",
-            Size: "5x3 Feet",
+      "Product Material": "Corian",
+      Thickness: "12 mm"
+    }
+  },
+  {
+    name: "Corian Top Center Table",
+    price: 650,
+    unit: "Square Feet",
+    image: img31,
+    thumbnails: [img3, img31, img32],
+    minOrder: 1000,
+    details: {
+      Color: "White",
+      Size: "5x3 Feet",
       Shape: "Rectangular",
       "Usage/Application": "Table Tops",
       Finish: "Polish",
-      "Product Material":	"Corian",
-      Thickness:	"10 mm"
-        }
-    },
+      "Product Material": "Corian",
+      Thickness: "10 mm"
+    }
+  },
 ];
 
 const TableTops = () => {
   return (
     <div className="Strech">
       <div className="Strech-header">
-        <h2>Stretch Ceiling</h2>
+        <h2>Table Tops</h2>
         <p>
-          We are a leading Wholesaler of PVC Stretch Ceiling, 0.5mm Printed Stretch
-          Ceiling, PVC Bed Room Stretch Ceiling, Printed Stretch Ceiling, Stretch Ceiling
-          3D Galaxy and PVC Film Coated 3D Infinity Stretch Ceiling from Indore, India.
+          Wholesaler of a wide range of products which include Lg Corian Acrylic Solid Surface, Rectangular White Corian Table Top and Corian Top Center Table.        
         </p>
       </div>
 
@@ -90,7 +95,7 @@ const TableTops = () => {
                     />
                   ))}
                 </div>
-                 <button className="photos-button">Get More Photos</button>
+                <button className="photos-button">Get More Photos</button>
               </div>
 
               <div className="product-right">
