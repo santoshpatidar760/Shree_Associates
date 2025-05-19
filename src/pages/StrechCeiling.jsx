@@ -17,6 +17,14 @@ import img31 from "../assets/PVC Bed Room Stretch Ceiling (1).jpg";
 import img32 from "../assets/PVC Bed Room Stretch Ceiling (2).jpg";
 import img41 from "../assets/Pinted.jpg";
 import img42 from "../assets/Pinted2.jpeg"; 
+import img51 from "../assets/3d galaxy.jpg";
+import img52 from "../assets/3D-form.jpg";
+import img61 from "../assets/pvc fil.jpeg";
+import img62 from "../assets/pvc film.jpeg";
+import img71 from "../assets/roman.jpg";
+import img72 from "../assets/craig.jpg";
+import img81 from "../assets/cole.jpg";
+import img82 from "../assets/declan.jpg";
 
 const products = [
     {
@@ -88,7 +96,7 @@ const products = [
         price: 550,
         unit: "Square Feet",
         image: img5,
-        thumbnails: [img2, img3, img4],
+        thumbnails: [img5, img51, img52],
         minOrder: 10000,
         details: {
             Material: "PVC",
@@ -104,7 +112,7 @@ const products = [
         price: 550,
         unit: "Square Feet",
         image: img6,
-        thumbnails: [img2, img3, img4],
+        thumbnails: [img6, img61, img62],
         minOrder: 10000,
         details: {
             Material: "PVC",
@@ -120,7 +128,7 @@ const products = [
         price: 550,
         unit: "Square Feet",
         image: img7,
-        thumbnails: [img2, img3, img4],
+        thumbnails: [img7, img71, img72],
         minOrder: 10000,
         details: {
             Material: "PVC",
@@ -136,7 +144,7 @@ const products = [
         price: 550,
         unit: "Square Feet",
         image: img8,
-        thumbnails: [img2, img3, img4],
+        thumbnails: [img8, img81, img82],
         minOrder: 10000,
         details: {
             Material: "PVC",
